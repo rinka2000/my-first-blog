@@ -7,16 +7,12 @@
             <h1><a href="">Blog Posts</a></h1>
         </div>
 
+{% for post in posts%}
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p> My first pos was about one of my favorite singers and what makes him different.</p>
+          <p>published: {{ post.published_date }}</p>
+          <h1><a href="">{{ post.title }}</a></h1>
+          <p>{{ post.text|linebreaksbr }}</p>
         </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>I think this one was either about my dog or Blackpink Lisa and how I want to dance like her and her fashion is so cool.</p>
-        </div>
+{% endfor %}
     </body>
 </html>
