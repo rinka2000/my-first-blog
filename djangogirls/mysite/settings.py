@@ -25,7 +25,8 @@ SECRET_KEY = '-0!pg$slndol^=g9@to2lh9n&*&p#%4_g#2@-!nim@(quybm)s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'kezia.pythonanywhere.com']
+
+ALLOWED_HOSTS = ['127.0.0.1', 'rinka2000.pythonanywhere.com']
 
 
 # Application definition
